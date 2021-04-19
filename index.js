@@ -5,7 +5,7 @@ const fs = require('fs')
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
-["command", "events"].forEach(handler => {
+["command handler", "event handler"].forEach(handler => {
   require(`./handlers/${handler}`)(client);
 });
 
